@@ -1,3 +1,15 @@
+/*
+This code will do the following.
+- use aws provider
+- Create an EC2 instance with specific AMI id.
+- use user_data to do some post provisioning tasks.
+- create a security group to allow traffic to port 8080
+- use variable to specify the port.
+- Create a relationship between aws_instance and security group..
+- use Tags on the EC2 instance.
+- use the output block to get the public ip of the created EC2 instance.
+*/
+
 provider "aws" {
   region = "ap-south-1"
 }
